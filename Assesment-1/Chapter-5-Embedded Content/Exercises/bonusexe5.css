@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	background: url('splash.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.soundboard {
+    width: 60%;
+}
+
+.tts {
+    width: 35%;
+}
+
+button {
+    margin: 10px;
+    padding: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%; 
+    background-color: #ADD8E6; 
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+h1 { 
+    color: #000080; 
+}
+
+button:hover {
+    background-color: #00008B; 
+}
+
+button:active {
+    background-color: #000080; 
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#prev, #next {
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
